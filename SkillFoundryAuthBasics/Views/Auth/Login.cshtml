@@ -1,0 +1,14 @@
+﻿@model SkillFoundryAuthBasics.Models.LoginFormModel
+
+<h1>Log In</h1>
+<form asp-action="Login" asp-controller="Auth" method="post">
+    <div>
+        <label asp-for="UserName">User Name</label>
+        <input type="text" asp-for="UserName" />
+    </div>
+    <div>
+        <label asp-for="Password">Password</label>
+        <input type="text" asp-for="Password" />
+    </div>
+    <button type="submit">Log In</button>
+</form>
